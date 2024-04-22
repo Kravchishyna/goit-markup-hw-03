@@ -3,8 +3,11 @@ body {
     color: #434455;
     background-color: white;
 }
-h1,h2,h3{
+h1,h2,h3,p {
     margin: 0;
+}
+img {
+    display: block;
 }
 
 a {
@@ -95,28 +98,30 @@ ul, ol {
     gap: 40px;
 }
 /* =====hero===== */
-.conteiner {
-    width: 1188px;
-    padding: 0 15px;
+
+.title-section {
+    background-color: #2e2f42;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-}
-.title-section {
-    background: #2e2f42;
 }
 .page-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #ffffff;
     display: block;
 }
 .page-conteiner {
     display: block;
     max-width: 496px;
-    margin: 0 auto 48px auto;
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 292px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .button {
     font-family: "Roboto", sans-serif;
@@ -127,7 +132,7 @@ ul, ol {
     letter-spacing: 0.04em;
     color:#ffffff;
     cursor: pointer;
-  
+    display: inline-block;
 }
 .batton-wrap {
     display: flex;
@@ -141,9 +146,6 @@ ul, ol {
     width: 169px;
     height: 56px;
 }
-    
-    
-
 .button:hover {
     background-color: #404bbf;
 }
@@ -151,11 +153,9 @@ ul, ol {
     background-color: #404bbf;
 }
 /* =====benefits===== */
-.conteiner {
-    width: 1128px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+.benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .visually-hidden {
     position: relative;
@@ -202,14 +202,11 @@ ul, ol {
     color: #434455;
 }
 /* =====our team===== */
-.conteiner {
-    width: 1158px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-}  
+ 
 .team-section {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team-title {
     font-weight: 700;
@@ -242,6 +239,8 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 .avatar-goal {
     font-weight: 400;
@@ -252,11 +251,9 @@ ul, ol {
     color: #434455;
 }
 /* ======portfolio====== */
-.conteiner {
-    width: 1158px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;  
 }
 .portfolio-title {
     font-weight: 700;
@@ -267,7 +264,6 @@ ul, ol {
     color: #2e2f42;
     text-transform: capitalize;
     margin-bottom: 72px;
-   
 }
 .portfolio-name {
     font-weight: 500;
@@ -275,30 +271,42 @@ ul, ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 .portfolio-goal {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #434455;
 }
 .portfolio-list {
-    border: 1px solid #e7e9fc;
-    background: #fff;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    gap: 8px;
-    padding: 32px 16px;
+    flex-wrap: wrap;
+    border: 1px solid #e7e9fc;
+    background: #fff; 
+  
 }
+
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3); 
+}
+
 /* =====footer====== */
-.conteiner {
-    padding: 100px 0;
-}
+
 .section {
     background: #2e2f42;
+    max-width: 1440px;
+    padding: 100px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-p {
+    display: inline-block;
+    margin-right: 1020px;
+    margin-left: 156px;
+    max-width: 264px;
 }
 .section-title {
     font-weight: 700;
@@ -310,7 +318,7 @@ ul, ol {
     text-transform: capitalize; 
 }
 .logo-f {
-    display: inline-block;
+    
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -318,8 +326,6 @@ ul, ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-bottom: 16px;
-
 }
 .logo-part-f {
     font-family: "Raleway", sans-serif;
@@ -331,11 +337,12 @@ ul, ol {
     color: #f4f4fd;
 }
 .section-text {
-    max-width: 264px;
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    
+    margin-top: 16px;
+   
 }
