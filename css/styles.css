@@ -151,7 +151,7 @@ ul, ol {
     padding-bottom: 120px;
 }
 .visually-hidden {
-    position: relative;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1 px ;
